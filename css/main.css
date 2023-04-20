@@ -148,8 +148,11 @@
     box-sizing: border-box;
     width: 100%; height: 865px;
    }
-#exhibition .ttl{
-    margin-left: 285px;
+#exhibition .ttl_box{
+    margin: 0 auto;
+    width: 1300px;
+    height: 50px;
+   
 }
 .exhibition_top{
     margin-top: 10px;
@@ -231,7 +234,6 @@
     margin: 0 auto;
     margin-top: 100px;
     width: 1300px;height: 548px;
-   
 }
 .mmtv_main_box{
     margin-top: 10px;
@@ -256,10 +258,16 @@
     margin-top: 100px;
     width: 100%; height:528px ;
 }
-#newsletter .ttl{
-    margin-left: 290px;
-}
 
+#newsletter .ttl_box{
+    margin: 0 auto;
+    width: 1300px; height: 50px;
+}
+#notice .ttl{
+    margin:  0 auto;
+    width: 1300px;
+    height: 50px;
+}
 .newspage{
     margin-top: 20px;
     width: 100%; height:466px;
@@ -274,7 +282,6 @@
 /* 새소식 */
 #notice{
     width: 100%; height: 550px;
-    
 }
 #left_box{
     float: left;
