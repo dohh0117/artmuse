@@ -17,7 +17,7 @@
     position: absolute;
     top:20px; right: 26px;}
 #header_in .infomn li{
-    float: left; margin-left: 26px;
+    float: left; margin-left: 27px;
 }
 #header_in .infomn li a{font-size: 12px;}
 
@@ -76,31 +76,32 @@
 #introduction{
     margin-top: 100px; box-sizing: border-box;
     width: 100%;height:500px;
-   
     overflow: hidden;
-    position: relative;
+    
+    
 }
-#introduction .veiw>h2{
-    float: left;
-    margin: 100px 0 0 26px;
-    font-size: 35px;
+
+#introduction .ttl_box{
+    width: 300px;height: 500px;
+    background-color: #adadad;
 }
 .slide_area{
-    position: absolute;
-    top: 0;right: -450px;
     
     width: 1500px;height: 500px; 
     border:3px solid #777;
 }
 #introduction .veiw{
+    /* position: absolute;
+    top: 0;right: -450px; */
    margin: 0 auto;
+   position: relative;
     width:1300px; height: 500px; 
 }
 .museum_list{ 
     position: absolute;
-    top: 0; left: 0;
+    top: 0; right: -650px;
     display: flex; justify-content: space-between;
-    width: 1600px; height: 500px;}
+    width: 1500px; height: 500px;}
 .museum_list>li{
     width:330px; height: 500px;
    
@@ -147,27 +148,45 @@
     padding-top: 20px;
     box-sizing: border-box;
     width: 100%; height: 865px;
+    position: relative;
    }
+#exhibition .ttl_box{
+    padding-bottom: 20px;
+}
+
+#exhibition .exhi_left_btn{
+    position: absolute;
+    top: 500px; left: 300px;
+}
+#exhibition .exhi_left_btn img{
+    width: 45px; height: 45px;
+}
+#exhibition .exhi_right_btn{
+    position: absolute;
+    top: 500px; right: 300px;
+}
+#exhibition .exhi_right_btn img{
+    width: 45px; height: 45px;
+}
+
 #exhibition .ttl_box{
     margin: 0 auto;
     width: 1300px;
     height: 50px;
-   
 }
 .exhibition_top{
     margin-top: 10px;
     width: 100%;height:800px;
-    background-color: #3a3333;
+    background-color: #141313;
 }
 .museum_btn{
     width: 100%; height: 98px;
     border-bottom:3px solid #777;
-    box-sizing: border-box;
+    box-sizing: border-box;opacity: 0.7;
 }
 .museum_btn_in{
     margin: 0 auto;
     width: 1300px;height: 98px;
-    background-color: #666;
 }
 .museum_btn_in>ul{
     margin: 0 auto;
@@ -184,23 +203,71 @@
 
 .exhibition_bottom{
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1300px; height: 650px;
-    background-color:cadetblue;
+   
 }
+.exhibition_bottom .post_area{
+    width: 429px;height: 544px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.exhibition_bottom .exhibition_txt_area{
+    margin-left: 200px;
+    width: 450px;height: 550px;
+    color: #fff;
+
+}
+.exhibition_txt_area .exhhi_place{
+    font-size: 15px;
+}
+
+.exhibition_txt_area .exhi_ttl{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.exhibition_txt_area .date{
+   
+    padding: 20px 0 10px 0; font-size: 20px; font-weight: 700;
+}
+.exhibition_txt_area .stereo_guide{
+   padding: 0 0 10px 0;
+}
+.exhibition_txt_area .exhi_exlpa p{
+    font-size: 15px; padding-top: 10px;
+
+}
+.exhibition_txt_area .reserve_btn{
+    margin-top:20px ; cursor: pointer;
+    line-height: 40px; font-size: 15px;
+    width: 120px;height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
 
 
 /* 관련시설 */
 #fasility{
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 1300px; height: 830px;
    
 }
+#fasility  .ttl_box{
+    padding-bottom: 30px;
+}
+
 .fasility_box{
     margin-top: 10px;
     width: 100%;height: 750px;
     
 }
+
 .top_box{
     margin-bottom: 30px;
     width: 100%; height: 362px;
@@ -208,10 +275,12 @@
 }
 .artbank{
     float: left;
+    background: url(../imags/img_ex04.jpg) 10% 30%;
     width: 360px; height: 362px;
     background-color:#ccc;}
 .residence{
     float: right;
+    background: url(../imags/residence.png) no-repeat 30% 50%;
     width: 910px; height: 362px;
     background-color: #3a3333;
 }    
@@ -221,20 +290,28 @@
 }
 .child_art{
     float: left;
+    background: url(../imags/child_art03.jpg) 0  50%;
+    background-size: 100% ;
     width: 910px; height: 362px;
     background-color: #666;
 }
 .library{
     float: right;
+    background: url(../imags/library04.jpg) no-repeat;
+    background-size: 100% 100%;
     width: 360px; height: 362px;
     background-color: slategray;
 }
 /* 디지털 미술관 */
 #mmcatv{
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 1300px;height: 548px;
 }
+#mmcatv .ttl_box{
+    padding-bottom: 30px;
+}
+
 .mmtv_main_box{
     margin-top: 10px;
     display: flex;
@@ -255,12 +332,14 @@
 }
 /* 뉴스레터 */
 #newsletter{
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%; height:528px ;
+    position: relative;
 }
 
 #newsletter .ttl_box{
     margin: 0 auto;
+    padding-bottom:10px ;
     width: 1300px; height: 50px;
 }
 #notice .ttl{
@@ -268,57 +347,174 @@
     width: 1300px;
     height: 50px;
 }
+.subscrip_btn{
+    position: absolute;
+    top: 130px;left: -20px;
+    width:610px ;height: 66px;
+    border:2px solid #fff;
+   line-height: 66px;
+    border-radius: 7px; z-index: 200;
+}
+.subscrip_btn a{
+    padding-left:400px ;
+    color: #fff;
+}
+
 .newspage{
     margin-top: 20px;
     width: 100%; height:466px;
     background-color: #4b4343;
 }
+
 .news_in{
     margin: 0 auto;
     width: 1300px; height: 466px;
     background-color: #3a3333;
-    opacity: 0.9;
+    opacity: 0.9; position: relative;
 }
+.news_in .right_btn {
+    position: absolute;
+    top:300px ; right: 0;
+}
+
+.news_in .right_btn img{
+    width: 30px; height: 30px;
+}
+
+.news_in .left_btn img{
+    width: 30px; height: 30px;
+}
+.news_in .left_btn {
+    position: absolute;
+    top:300px ; left: 0;
+}
+.news_in_box{
+    float: right;
+    width: 850px;height: 466px;
+    
+}
+.news_in_box .image_box{
+    padding-top: 50px;
+    float: right;
+    width: 450px; height: 450px;
+
+}
+.news_in_box .newsletter_box{
+    margin: 250px 0 0 0;
+    padding: 50px 20px 0 0;
+    box-sizing: border-box;
+    text-align: right;
+    width: 400px;height: 173px;
+}
+
+.news_in_box .newsletter_box h5{
+    font-size:25px; color: #fff;
+}
+.news_in_box .newsletter_box p{
+    padding-top: 10px;
+    color: #fff;
+}
+
+
 /* 새소식 */
 #notice{
+    margin-top: 90px;
     width: 100%; height: 550px;
 }
-#left_box{
-    float: left;
-    width:924px; height: 550px;
-    background-color: #bdbdbd;
+#notice_in{
+    margin: 0 auto;
+    display: flex;
+    width: 1300px;height: 550px;
+    
 }
-#left_box .news_box{
-    float: right;
-    padding-top:10px ;
+#notice_in .right_box{
+    width: 650px;height: 550px;
+   
+
+}
+#notice_in .ttl_box{
+    padding: 20px 0 0 30px;
     box-sizing: border-box;
-    width: 645px;height: 319px;
-    border: 3px solid #fff;
+    line-height: 150px;
+    width: 650px;height: 150px;
+    
+    
 }
-#left_box .news_box h4{
-    font-size: 20px;
-}
-
-#left_box .news_box_in{
-    width: 100%; height: 210px;
-    border-top:3px solid #3a3333;
-    border-bottom:3px solid #3a3333;
-
+#notice_in .ttl_box .ttl{
+   width: 100px; font-size: 30px;
 }
 
-#right_box{
-    float: right;
-    width: 924px;height: 550px;
-  
+#notice_in .ttl_box .ttl_eng{
+    float: left; opacity: 0.4;
+    font-size: 30px;
+    text-transform: uppercase;
 }
-#right_box .announce_box{
-    float: left;
-    width: 645px; height: 319px;
-    border: 3px solid #4b4343;
+#notice_in .news_box{
+    margin-left: 25px;
+    width: 600px;height: 250px;
+    border-top: 3px solid #111 ;
+    border-bottom: 3px solid #111 ;
+}
+#notice_in .left_box{
+    width: 650px;height: 550px;
+   
+}
+
+#notice_in .notice_box{
+    margin-left: 25px;
+    width: 600px;height: 250px;
+    border-top: 3px solid #111 ;
+    border-bottom: 3px solid #111 ;
 }
 
 /* 하단 */
 #footer{
-    width: 100%;height: 327px;
+    width: 100%;height: 400px;
+    
+}
+#footer_top{
+    width: 100%;height: 250px;
     background-color: #3a3333;
 }
+#footer_top .top_in{
+    margin: 0 auto;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+    width: 1300px;height:200px;
+    background-color: #3a3333;
+}
+#footer_top .top_in .company_info {
+    float: left;
+}
+#footer_top .top_in .company_info p{
+    padding-top: 3px;
+    font-size: 13px; color: #adadad;
+}
+#footer_top .top_in .sub_mn{
+    float: right;
+    width: 625px;height: 200px;
+}
+#footer_top .top_in .sub_mn_li{
+    margin-left: 150px;
+}
+
+#footer_top .top_in .sub_mn_li >li{
+    float: left; margin-left: 60px;
+}
+#footer_top .top_in .foot_li>li>a{
+    color: #adadad; font-size: 12px;
+}
+
+#footer_bottom{
+    
+    width: 100%;height: 127px;
+   
+}
+#footer_bottom .bottom_in{
+    margin: 0 auto;
+    padding-top: 15px;
+    box-sizing: border-box;
+    width: 1300px;height: 127px;
+    
+}
+
