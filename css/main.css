@@ -85,11 +85,7 @@
     width: 300px;height: 500px;
     background-color: #adadad;
 }
-.slide_area{
-    
-    width: 1500px;height: 500px; 
-    border:3px solid #777;
-}
+
 #introduction .veiw{
     /* position: absolute;
     top: 0;right: -450px; */
@@ -97,9 +93,16 @@
    position: relative;
     width:1300px; height: 500px; 
 }
-.museum_list{ 
+.slide_area {
     position: absolute;
     top: 0; right: -650px;
+    width: 1500px;
+    height: 500px;
+    border: 3px solid #777;
+}
+.museum_list{ 
+    position: absolute;
+    top: 0; right: -350px;
     display: flex; justify-content: space-between;
     width: 1500px; height: 500px;}
 .museum_list>li{
