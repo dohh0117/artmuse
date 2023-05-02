@@ -6,8 +6,8 @@
     /* background-color: #ccc; */
 }
 #header_in{
-    margin: 0 ;
-    width: 100%; height: 130px;
+    margin: 0 auto;
+    width: 108%; height: 130px;
     background-color: yellowgreen;
     /* background-color: aliceblue; */
     position: relative;
@@ -43,11 +43,13 @@
     
 }
 #main_in{
-    margin: 0;
+    margin: 0 auto;
     border-radius: 7px;
-    width: 100%;height: 604px;
+    width: 1300px;height: 604px;
+  
     background-color: steelblue;
 }
+
 
 /* 컨텐츠 */
 #contents{
@@ -56,9 +58,9 @@
     
 }
 #resume_goto{
-    margin: 0;
+    margin: 0 auto;
     padding: 42px 26px 0 26px; box-sizing: border-box;
-    width: 100%;height:196px ;
+    width: 1300px;height:196px ;
    border-bottom:3px solid #777 ;}
 #resume_goto .goto_ttl{float: left;}
 #resume_goto .goto_ttl h3{font-size:35px; padding-bottom: 10px;}
@@ -75,56 +77,43 @@
     width:185px; height: 60px;
 }
 /* 미술관 소개 */
-#introduction {
-    margin-top: 100px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 500px;
+#introduction{
+    margin-top: 100px; box-sizing: border-box;
+    width: 100%;height:500px;
+   
     overflow: hidden;
-
-
+    position: relative;
 }
-
-#introduction .ttl_box {
-    width: 300px;
-    height: 500px;
+#introduction .ttl_box{
+    width: 300px;height: 500px;
     background-color: #adadad;
 }
 
-#introduction .veiw {
-    /* position: absolute;
-    top: 0;right: -450px; */
-    margin: 0;
-    position: relative;
-    width: 100%;
-    height: 500px;
+#introduction .veiw>h2{
+    float: left;
+    margin: 100px 0 0 26px;
+    font-size: 35px;
 }
-
-.slide_area {
+.slide_area{
     position: absolute;
-    top: 0;
-    right: -650px;
-    width: 1500px;
-    height: 500px;
-    background-color: turquoise;
-    border: 3px solid #777;
+    top: 0;right: -300px;
+    
+    width: 1500px;height: 500px; 
+    border:3px solid #777;
 }
-
-.museum_list {
+#introduction .veiw{
+   margin: 0 auto;
+    width:1300px; height: 500px; 
+}
+.museum_list{ 
     position: absolute;
-    top: 0;
-    right: -350px;
-    display: flex;
-    justify-content: space-between;
-    width: 1500px;
-    height: 500px;
-}
-
-.museum_list>li {
-    width: 330px;
-    height: 500px;
-
-}
+    top: 0; left: 0;
+    display: flex; justify-content: space-between;
+    width: 1600px; height: 500px;}
+.museum_list>li{
+    width:330px; height: 500px;
+   
+} 
 .intro_imgbox{
     width: 330px; height: 350px;
     border-radius: 7px;
@@ -189,8 +178,8 @@
 }
 
 #exhibition .ttl_box{
-    margin: 0 ;
-    width: 100%;
+    margin: 0 auto;
+    width: 1300px;
     height: 50px;
 }
 .exhibition_top{
@@ -204,8 +193,8 @@
     box-sizing: border-box;opacity: 0.7;
 }
 .museum_btn_in{
-    margin: 0;
-    width: 100%;height: 98px;
+    margin: 0 auto;
+    width: 1300px;height: 98px;
 }
 .museum_btn_in>ul{
     margin: 0 auto;
@@ -221,11 +210,11 @@
 }
 
 .exhibition_bottom{
-    margin: 0 ;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; height: 650px;
+    width: 1300px; height: 650px;
    
 }
 .exhibition_bottom .post_area{
@@ -272,9 +261,9 @@
 
 /* 관련시설 */
 #fasility{
-    margin: 0;
+    margin: 0 auto;
     margin-top: 200px;
-    width: 100%; height: 830px;
+    width: 1300px; height: 830px;
    
 }
 #fasility  .ttl_box{
@@ -323,9 +312,9 @@
 }
 /* 디지털 미술관 */
 #mmcatv{
-    margin: 0 ;
+    margin: 0 auto;
     margin-top: 200px;
-    width: 100%;height: 548px;
+    width: 1300px;height: 548px;
 }
 #mmcatv .ttl_box{
     padding-bottom: 30px;
@@ -357,13 +346,13 @@
 }
 
 #newsletter .ttl_box{
-    margin: 0 ;
+    margin: 0 auto;
     padding-bottom:10px ;
-    width: 100%; height: 50px;
+    width: 1300px; height: 50px;
 }
 #notice .ttl{
-    margin:  0 ;
-    width: 100%;
+    margin:  0 auto;
+    width: 1300px;
     height: 50px;
 }
 .subscrip_btn{
@@ -386,8 +375,8 @@
 }
 
 .news_in{
-    margin: 0 ;
-    width: 100%; height: 466px;
+    margin: 0 auto;
+    width: 1300px; height: 466px;
     background-color: #3a3333;
     opacity: 0.9; position: relative;
 }
@@ -441,13 +430,13 @@
     width: 100%; height: 550px;
 }
 #notice_in{
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-    width: 100%;height: 550px;
+    width: 1300px;height: 550px;
     
 }
 #notice_in .right_box{
-    width: 54%;height: 550px;
+    width: 650px;height: 550px;
    
 
 }
@@ -455,7 +444,7 @@
     padding: 20px 0 0 30px;
     box-sizing: border-box;
     line-height: 150px;
-    width: 54%;height: 150px;
+    width: 650px;height: 150px;
     
     
 }
@@ -469,19 +458,19 @@
     text-transform: uppercase;
 }
 #notice_in .news_box{
-    margin-left: 0px;
-    width: 50%;height: 250px;
+    margin-left: 25px;
+    width: 600px;height: 250px;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
 #notice_in .left_box{
-    width: 54%;height: 550px;
+    width: 650px;height: 550px;
    
 }
 
 #notice_in .notice_box{
-    margin-left: 0;
-    width: 50%;height: 250px;
+    margin-left: 25px;
+    width: 600px;height: 250px;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
@@ -496,10 +485,10 @@
     background-color: #3a3333;
 }
 #footer_top .top_in{
-    margin: 0 ;
+    margin: 0 auto;
     padding: 20px 0 0 20px;
     box-sizing: border-box;
-    width: 100%;height:200px;
+    width: 1300px;height:200px;
     background-color: #3a3333;
 }
 #footer_top .top_in .company_info {
@@ -530,10 +519,10 @@
    
 }
 #footer_bottom .bottom_in{
-    margin: 0 ;
+    margin: 0 auto;
     padding-top: 15px;
     box-sizing: border-box;
-    width: 100%;height: 127px;
+    width: 1300px;height: 127px;
     
 }
 

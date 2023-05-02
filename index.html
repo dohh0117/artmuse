@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" media="screen and (max-width:1200px)" href="./css/main_1200.css">
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="./css/main_1000.css">
-
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/jquery.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -36,9 +37,16 @@
         </header>
         <!-- 메인슬라이드 -->
         <section id="main">
-            <article id="main_in">
-                <div class="view"></div>
-            </article>
+            <ul class="slider">
+                <li><img src="./imags/slider1.jpg" alt="슬라이드이미지1"></li>
+                <li><img src="./imags/slider2.jpg" alt="슬라이드이미지2"></li>
+                <li><img src="./imags/slider3.jpg" alt="슬라이드이미지3"></li>
+            </ul>
+            <ul class="slider_btn">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
         <!-- 컨텐츠 -->
         <section id="contents">
