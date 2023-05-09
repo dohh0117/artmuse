@@ -7,45 +7,85 @@
 }
 #header_in{
     margin: 0 auto;
-    width: 108%; height: 130px;
+    width: 100%; height: 130px;
     background-color: yellowgreen;
     /* background-color: aliceblue; */
     position: relative;
 }
 #header_in .logo{
-    
+    width:27vw ;
     float: left; margin-top: 20px;}
 #header_in .infomn{
     position: absolute;
     top:20px; right: 2.6%;}
 #header_in .infomn li{
-    float: left; margin-left: 26px;
+    float: left; margin-left: 2.1vw;
 }
 #header_in .infomn li a{font-size: 12px;}
 
 #header_in .nav{
     /* background-color: yellowgreen; */
-    float: right; margin: 75px 26px 0 0;
+    float: right; margin: 75px 0 0 0;
    
 }
 #header_in .nav>ul{ 
-   
-    width: 805px;height: 21px; 
-    display: flex; justify-content: space-between;}
+}
+
+#header_in .nav>ul>li{
+    float: left; margin-left: 3.3vw;
+    position: relative;
+    text-align: center;
+    width: 8.3vw;height:10px ;
+} 
+#header_in .nav>ul>li:nth-child(4){
+    padding-right:0.7vw ;
+}
+#header_in .nav>ul>li:nth-child(6){
+    margin-left: 0;
+}
+
 
 #header_in .nav>ul>li>a{
-    font-size: 18px; font-weight: 700;
+    font-size: 1.5vw; font-weight: 700;
 } 
 
+#header_in .sub{
+    position: absolute;
+    top: 60px;left: -52px; text-align: start;
+    z-index: 1000;
+}
+#header_in .sub>li{
+    
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+#header_in .sub>li:hover{
+    background-color: #111;
+}
+
+#header_in .sub>li>a{
+    color: #fff;
+    line-height: 40px;
+}
+
+#header_in .nav_back{
+    position: absolute;
+    top: 120px; left: 0;
+    width: 1300px;height: 300px;
+    background-color: #272727;
+    z-index: 900;
+   
+}
 /* 메인슬라이드 */
 #main{
     width: 100%;height:604px;
     
 }
 #main_in{
-    margin: 0 auto;
+    margin: 0 ;
     border-radius: 7px;
-    width: 1300px;height: 604px;
+    width: 100%;height: 604px;
   
     background-color: steelblue;
 }
@@ -60,7 +100,7 @@
 #resume_goto{
     margin: 0 auto;
     padding: 42px 26px 0 26px; box-sizing: border-box;
-    width: 1300px;height:196px ;
+    width: 100%;height:196px ;
    border-bottom:3px solid #777 ;}
 #resume_goto .goto_ttl{float: left;}
 #resume_goto .goto_ttl h3{font-size:35px; padding-bottom: 10px;}
@@ -103,19 +143,19 @@
 }
 #introduction .veiw{
    margin: 0 auto;
-    width:1300px; height: 500px; 
+    width:100%; height: 500px; 
 }
 .museum_list{ 
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 300px;
     display: flex; justify-content: space-between;
-    width: 1600px; height: 500px;}
+    width: 1400px; height: 500px;}
 .museum_list>li{
     width:330px; height: 500px;
    
 } 
 .intro_imgbox{
-    width: 330px; height: 350px;
+    width: 300px; height: 350px;
     border-radius: 7px;
     background-color: rgb(224, 187, 181);
 }
@@ -154,6 +194,7 @@
 #exhibition{
     margin-top: 200px;
     padding-top: 20px;
+    background-color: yellow;
     box-sizing: border-box;
     width: 100%; height: 865px;
     position: relative;
@@ -164,22 +205,22 @@
 
 #exhibition .exhi_left_btn{
     position: absolute;
-    top: 500px; left: 300px;
+    top: 500px; left:50px;
 }
 #exhibition .exhi_left_btn img{
     width: 45px; height: 45px;
 }
 #exhibition .exhi_right_btn{
     position: absolute;
-    top: 500px; right: 300px;
+    top: 500px; right: 50px;
 }
 #exhibition .exhi_right_btn img{
     width: 45px; height: 45px;
 }
 
 #exhibition .ttl_box{
-    margin: 0 auto;
-    width: 1300px;
+    margin: 0 ;
+    width: 100%;
     height: 50px;
 }
 .exhibition_top{
@@ -193,12 +234,12 @@
     box-sizing: border-box;opacity: 0.7;
 }
 .museum_btn_in{
-    margin: 0 auto;
-    width: 1300px;height: 98px;
+    margin: 0;
+    width: 100%;height: 98px;
 }
 .museum_btn_in>ul{
     margin: 0 auto;
-    width: 1160px;height: 96px;
+    width: 100%;height: 96px;
    line-height: 96px;
     display: flex; justify-content: space-around;
     background-color: #7c7a7a;
@@ -214,17 +255,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1300px; height: 650px;
+    width: 80%; height: 650px;
    
 }
 .exhibition_bottom .post_area{
-    width: 429px;height: 544px;
+    width: 35vw;height: 60vh;
     border-radius: 7px;
     overflow: hidden;
 }
 .exhibition_bottom .exhibition_txt_area{
     margin-left: 200px;
-    width: 450px;height: 550px;
+    width: 37vw;height: 550px;
     color: #fff;
 
 }
@@ -261,9 +302,9 @@
 
 /* 관련시설 */
 #fasility{
-    margin: 0 auto;
+    margin:0;
     margin-top: 200px;
-    width: 1300px; height: 830px;
+    width:100%; height: 830px;
    
 }
 #fasility  .ttl_box{
@@ -284,12 +325,12 @@
 .artbank{
     float: left;
     background: url(../imags/img_ex04.jpg) 10% 30%;
-    width: 360px; height: 362px;
+    width: 30vw; height: 362px;
     background-color:#ccc;}
 .residence{
     float: right;
     background: url(../imags/residence.png) no-repeat 30% 50%;
-    width: 910px; height: 362px;
+    width: 67.8vw; height: 362px;
     background-color: #3a3333;
 }    
 .bottom_box{
@@ -300,21 +341,21 @@
     float: left;
     background: url(../imags/child_art03.jpg) 0  50%;
     background-size: 100% ;
-    width: 910px; height: 362px;
+    width: 67.8vw; height: 362px;
     background-color: #666;
 }
 .library{
     float: right;
     background: url(../imags/library04.jpg) no-repeat;
     background-size: 100% 100%;
-    width: 360px; height: 362px;
+    width: 30vw; height: 362px;
     background-color: slategray;
 }
 /* 디지털 미술관 */
 #mmcatv{
-    margin: 0 auto;
+    margin: 0 ;
     margin-top: 200px;
-    width: 1300px;height: 548px;
+    width: 100%;height: 548px;
 }
 #mmcatv .ttl_box{
     padding-bottom: 30px;
@@ -329,13 +370,13 @@
 }
 .movie_group{
     margin: 0 auto;
-    width: 1207px;height: 295px;
+    width: 80vw;height: 295px;
     display: flex;
     justify-content: space-between;
     
 }
 .moviebox{
-    width: 390px;height: 295px;
+    width: 25vw;height: 295px;
     background-color: #777;
 }
 /* 뉴스레터 */
@@ -346,9 +387,9 @@
 }
 
 #newsletter .ttl_box{
-    margin: 0 auto;
+    margin: 0 ;
     padding-bottom:10px ;
-    width: 1300px; height: 50px;
+    width: 100%; height: 50px;
 }
 #notice .ttl{
     margin:  0 auto;
@@ -357,7 +398,7 @@
 }
 .subscrip_btn{
     position: absolute;
-    top: 130px;left: -20px;
+    top: 130px;left: -100px;
     width:610px ;height: 66px;
     border:2px solid #fff;
    line-height: 66px;
@@ -375,8 +416,8 @@
 }
 
 .news_in{
-    margin: 0 auto;
-    width: 1300px; height: 466px;
+    margin: 0;
+    width: 100%; height: 466px;
     background-color: #3a3333;
     opacity: 0.9; position: relative;
 }
@@ -430,13 +471,13 @@
     width: 100%; height: 550px;
 }
 #notice_in{
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
-    width: 1300px;height: 550px;
+    width: 100%;height: 550px;
     
 }
 #notice_in .right_box{
-    width: 650px;height: 550px;
+    width: 50vw;height: 550px;
    
 
 }
@@ -444,7 +485,7 @@
     padding: 20px 0 0 30px;
     box-sizing: border-box;
     line-height: 150px;
-    width: 650px;height: 150px;
+    width: 44vw;height: 150px;
     
     
 }
@@ -459,18 +500,18 @@
 }
 #notice_in .news_box{
     margin-left: 25px;
-    width: 600px;height: 250px;
+    width: 44vw;height: 250px;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
 #notice_in .left_box{
-    width: 650px;height: 550px;
+    width: 50vw;height: 550px;
    
 }
 
 #notice_in .notice_box{
-    margin-left: 25px;
-    width: 600px;height: 250px;
+    margin-left:2vw;
+    width: 44vw;height: 250px;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
@@ -485,10 +526,10 @@
     background-color: #3a3333;
 }
 #footer_top .top_in{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 20px 0 0 20px;
     box-sizing: border-box;
-    width: 1300px;height:200px;
+    width: 100%;height:200px;
     background-color: #3a3333;
 }
 #footer_top .top_in .company_info {
@@ -519,10 +560,10 @@
    
 }
 #footer_bottom .bottom_in{
-    margin: 0 auto;
+    margin: 0;
     padding-top: 15px;
     box-sizing: border-box;
-    width: 1300px;height: 127px;
+    width: 100%;height: 127px;
     
 }
 

@@ -26,9 +26,7 @@
     position: relative;
 }
 #header_in .nav>ul{ 
-   
-    
-    /* display: flex; justify-content: space-between;} */}
+}
 
 #header_in .nav>ul>li{
     float: left; margin-left: 40px;
