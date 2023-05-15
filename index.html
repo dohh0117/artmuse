@@ -20,7 +20,7 @@
         <!-- 상단 -->
         <header id="header">
             <section id="header_in">
-                <h1 class="logo"><a href=""><img src="./imags/logo.png" alt=""></a></h1>
+                <h1 class="logo"><a href="https://dohh0117.github.io/artmuse/"><img src="./imags/logo.png" alt=""></a></h1>
                 <ul class="infomn">
                     <li><a href="">로그인 | 회원가입</a></li>
                     <li><a href="">검색</a></li>
@@ -30,7 +30,7 @@
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a href="">소개</a>
+                            <a href="https://dohh0117.github.io/subpage_artmuse/">소개</a>
                             <ul class="sub">
                                 <li><a href="">menu1</a></li>
                                 <li><a href="">menu2</a></li>
@@ -115,7 +115,16 @@
                   navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
-                  },
+                  },breakpoinst:{
+                    1200:{
+                        sliderPerView:3,
+                    }, 1000: {
+                          sliderPerView: 3,
+                      }, 640: {
+                          sliderPerView: 3,
+                      },
+
+                  }
                 });
           
               </script>
@@ -136,12 +145,15 @@
             </article>
             <!-- 미술관소개 -->
             <article id="introduction">
-                
+                <button class="list_btn_left"><img src="./imags/left_btn.png"></button>
+                <button class="list_btn_right"><img src="./imags/right_btn.png"></button>
                 <div class="veiw">
                     <div class="ttl_box">
                         <h2 class="ttl">미술관 소개</h2>
                         <h2 class="ttl_eng">museum</h2>
                     </div>    
+                  
+
                     <div class="slide_area">
                         <ul class="museum_list">
                             <li class="seul listbox">
@@ -276,12 +288,20 @@
                 </div>    
                 <section class="fasility_box">
                     <div class="top_box">
-                        <div class="artbank">미술은행</div>
-                        <div class="residence">래지던시</div>
+                        <div class="artbank">
+                            미술은행
+                        </div>
+                        <div class="residence">
+                            래지던시
+                        </div>
                     </div>
                     <div class="bottom_box">
-                        <div class="child_art"></div>
-                        <div class="library"></div>
+                        <div class="child_art">
+                            어린이미술관
+                        </div>
+                        <div class="library">
+                            도서관
+                        </div>
                     </div>
                 </section>
             </article>
@@ -293,9 +313,16 @@
                 </div>
                 <section class="mmtv_main_box">
                     <div class="movie_group">
-                        <div class="moviebox movie1"></div>
-                        <div class="moviebox movie2"></div>
-                        <div class="moviebox movie3"></div>
+                        <div class="moviebox movie1">
+                            <div class="frontbox"></div>
+                            <img src="./imags/movie01.jpg" alt="">
+                        </div>
+                        <div class="moviebox movie2">
+                            <img src="./imags/movie02.jpg" alt="">
+                        </div>
+                        <div class="moviebox movie3">
+                            <img src="./imags/movie03.jpg" alt="">
+                        </div>
                     </div>     
                 </section>
             </article>
@@ -334,9 +361,13 @@
                     </div>
                     <div class="news_box">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                news 국립현대미술관 제10기 고객자문단 최종선발자 발표
+                            </li>
+                            <li>
+                                news 제3기 국립현대미술관 외국인서포터즈 선발자 발표 및 발족식 안내
+                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -347,9 +378,13 @@
                     </div>
                     <div class="notice_box">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                notice 국립현대미술관 미술도서실(과천) 재운영(2023.2.13)
+                           </li>
+                            <li>
+                                notice 국립현대미술관 덕수궁 외벽공사에 따른 휴관 안내
+                            </li>
+                           
                         </ul>
                     </div>
                 </div>

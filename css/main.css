@@ -3,12 +3,13 @@
 /* 상단 */
 #header{
     width: 100%;
+   
     /* background-color: #ccc; */
 }
 #header_in{
     margin: 0 auto;
     width: 1300px;
-    background-color: aliceblue;
+    
     position: relative;
 }
 #header_in .logo{
@@ -147,17 +148,30 @@
     width: 100%;height:500px;
     overflow: hidden;
     
-    
+    position: relative;
 }
-
+#introduction button{
+    border: 0;
+}
+#introduction button img{
+    width: 20px;height: 20px;
+}
+.list_btn_right{
+position: absolute;
+top: 250px;right: 0;
+}
+.list_btn_left{
+    position: absolute;
+    top: 250px;left: 50vw;
+}
 #introduction .ttl_box{
-    width: 300px;height: 500px;
-    background-color: #adadad;
+    width: 300px;height:50vw;
+    
 }
 .slide_area{
     
     width: 1500px;height: 500px; 
-    border:3px solid #777;
+   
 }
 #introduction .veiw{
     /* position: absolute;
@@ -168,7 +182,8 @@
 }
 .museum_list{ 
     position: absolute;
-    top: 0; right: -350px;
+    top: 0; right: 50px;
+    
     display: flex; justify-content: space-between;
     width: 1080px; height: 500px;}
 .museum_list>li{
@@ -266,6 +281,7 @@
     margin: 0 auto;
     width: 1160px;height: 96px;
    line-height: 96px;
+   text-align: center;
     display: flex; justify-content: space-around;
     background-color: #7c7a7a;
 }
@@ -274,7 +290,13 @@
     font-size: 16px;
     color: #fff;
 }
-
+.museum_btn_in>ul>li {
+    display: block;
+    width: 8vw;
+}
+.museum_btn_in>ul>li:hover{
+ background-color: #141313;
+}
 .exhibition_bottom{
     margin: 0 auto;
     display: flex;
@@ -404,6 +426,10 @@
     width: 390px;height: 295px;
     background-color: #777;
 }
+.moviebox img{
+    width: 100%;
+    height: 100%;
+}
 /* 뉴스레터 */
 #newsletter{
     margin-top: 200px;
@@ -526,9 +552,26 @@
 #notice_in .news_box{
     margin-left: 25px;
     width: 600px;height: 250px;
+    display: flex; align-items: center;
+    justify-content: center;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
+#notice_in .news_box ul{
+  
+    width:70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#notice_in .news_box ul li{
+   padding-top: 20px;
+    list-style: circle;
+    text-overflow: ellipsis;
+}
+
 #notice_in .left_box{
     width: 650px;height: 550px;
    
@@ -537,10 +580,25 @@
 #notice_in .notice_box{
     margin-left: 25px;
     width: 600px;height: 250px;
+    display: flex; align-items: center;
+    justify-content: center;
     border-top: 3px solid #111 ;
     border-bottom: 3px solid #111 ;
 }
+#notice_in .notice_box ul {
 
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#notice_in .notice_box ul li {
+    padding-top: 20px;
+    list-style: circle;
+    text-overflow: ellipsis;
+}
 /* 하단 */
 #footer{
     width: 100%;height: 400px;
@@ -581,14 +639,14 @@
 
 #footer_bottom{
     
-    width: 100%;height: 127px;
+    width: 100%;
    
 }
 #footer_bottom .bottom_in{
     margin: 0 auto;
     padding-top: 15px;
     box-sizing: border-box;
-    width: 1300px;height: 127px;
+    width: 1300px;
     
 }
 

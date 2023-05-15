@@ -17,16 +17,22 @@ $(document).ready(function(){
 
 
 
-    //-----------------슬라이드 시작--------------------------
-
-   
-
-
-//------------------------------슬라이드끝--------------------------------
+    
 
 
 
-
+    $(".fasility_box>div").mouseenter(function () {
+        $(".fasility_box>div").animate({
+           opacity: 0.5
+        })
+        
+    })
+    $(".fasility_box>div").mouseleave(function () {
+        $(".fasility_box>div").animate({
+           opacity: 1
+        })
+        
+    })
 
 
 
