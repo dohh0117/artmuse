@@ -21,18 +21,18 @@ $(document).ready(function(){
 
 
 
-    $(".fasility_box>div").mouseenter(function () {
-        $(".fasility_box>div").animate({
-           opacity: 0.5
-        })
+    // $(".fasility_box>div").mouseenter(function () {
+    //     $(".fasility_box>div").animate({
+          
+    //     })
         
-    })
-    $(".fasility_box>div").mouseleave(function () {
-        $(".fasility_box>div").animate({
-           opacity: 1
-        })
+    // })
+    // $(".fasility_box>div").mouseleave(function () {
+    //     $(".fasility_box>div").animate({
+    //        opacity: 1
+    //     })
         
-    })
+    // })
 
 
 
