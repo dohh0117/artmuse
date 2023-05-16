@@ -147,47 +147,31 @@
     margin-top: 100px; box-sizing: border-box;
     width: 100%;height:500px;
     overflow: hidden;
-    
-    position: relative;
-}
-#introduction button{
-    border: 0;
-}
-#introduction button img{
-    width: 20px;height: 20px;
-}
-.list_btn_right{
-position: absolute;
-top: 250px;right: 0;
-}
-.list_btn_left{
-    position: absolute;
-    top: 250px;left: 50vw;
-}
-#introduction .ttl_box{
-    width: 300px;height:50vw;
-    
-}
-.slide_area{
-    
-    width: 1500px;height: 500px; 
-   
 }
 #introduction .veiw{
-    /* position: absolute;
-    top: 0;right: -450px; */
    margin: 0 auto;
-   position: relative;
-    width:1300px; height: 500px; 
+    width:1300px; height: 500px;
+    display: flex;
+    justify-content: space-between; 
+   
+}
+#introduction .ttl_box{
+    width: 190px;height:250px;
+    
+    display: flex; flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ttl_box_1000{display: none;}
+.slide_area{
+width: 1000px;height:450px; 
 }
 .museum_list{ 
-    position: absolute;
-    top: 0; right: 50px;
-    
     display: flex; justify-content: space-between;
-    width: 1080px; height: 500px;}
+    width: 1000px; height: 450px;}
 .museum_list>li{
-    width:330px; height: 500px;
+    width:230px; height: 450px;
    
 } 
 .intro_imgbox img{
@@ -207,12 +191,12 @@ top: 250px;right: 0;
 .listbox span{
     padding: 9px 0 0 20px;
     display: block; font-weight: 700;
-    float: left;font-size: 20px;
+    float: left;font-size: 17px;
     color: #999;
 }
 .listbox p{
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
     padding: 10px 0 0 5px;
     float: left; line-height: 20px;
@@ -233,7 +217,7 @@ top: 250px;right: 0;
 /* 전시 */
 
 #exhibition{
-    margin-top: 200px;
+    margin-top: 100px;
     padding-top: 20px;
     box-sizing: border-box;
     width: 100%; height: 865px;
@@ -287,6 +271,8 @@ top: 250px;right: 0;
 }
 
 .museum_btn_in>ul>li>a{
+    display: inline-block;
+    border: 0;
     font-size: 16px;
     color: #fff;
 }
@@ -350,7 +336,7 @@ top: 250px;right: 0;
 /* 관련시설 */
 #fasility{
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 50px;
     width: 1300px; height: 830px;
    
 }
@@ -490,11 +476,7 @@ top: 250px;right: 0;
     padding-bottom:10px ;
     width: 1300px; height: 50px;
 }
-#notice .ttl{
-    margin:  0 auto;
-    width: 1300px;
-    height: 50px;
-}
+
 .subscrip_btn{
     position: absolute;
     top: 130px;left: -20px;
