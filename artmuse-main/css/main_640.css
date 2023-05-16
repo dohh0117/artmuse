@@ -1,0 +1,612 @@
+#wrap{width: 100%;}
+
+/* 상단 */
+#header{
+    width: 100%;height:130px;
+    /* background-color: #ccc; */
+}
+#header_in{
+    margin: 0 ;
+    width: 100%; height: 130px;
+    
+    /* background-color: aliceblue; */
+    position: relative;
+}
+#header_in .logo{
+    margin: 0 auto;
+    float: left; margin-top: 20px;}
+#header_in .infomn{
+    display: none;
+    position: absolute;
+    top:20px; right: 2.6%;}
+#header_in .infomn li{
+    float: left; margin-left: 2.1vw;
+}
+#header_in .infomn li a{font-size: 12px;}
+
+#header_in .nav{
+    display: none;
+    /* background-color: yellowgreen; */
+    
+   
+}
+#header_in .nav>ul{ 
+}
+
+#header_in .nav>ul>li{
+    float: left; margin-left: 3.3vw;
+    position: relative;
+    text-align: center;
+    width: 8.3vw;height:10px ;
+} 
+#header_in .nav>ul>li:nth-child(4){
+    padding-right:0.7vw ;
+}
+#header_in .nav>ul>li:nth-child(6){
+    margin-left: 0;
+}
+
+#header_in .nav>ul>li>a{
+    font-size: 1.5vw; font-weight: 700;
+} 
+
+#header_in .sub{
+    position: absolute;
+    top: 60px;left: -52px; text-align: start;
+    z-index: 1000;
+}
+#header_in .sub>li{
+    
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+#header_in .sub>li:hover{
+    background-color: #111;
+}
+
+#header_in .sub>li>a{
+    color: #fff;
+    line-height: 40px;
+}
+
+
+/* 메인슬라이드 */
+.swiper {
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 520px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #fff;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 컨텐츠 */
+#contents{
+    position: relative;
+    width: 100%; 
+}
+#resume_goto{
+    margin: 0 auto;
+    padding: 37px 26px 0 26px; box-sizing: border-box;
+    width: 100%;height:150px ;
+   border-bottom:2px solid #777 ;}
+#resume_goto .goto_ttl{float: left;}
+#resume_goto .goto_ttl h3{font-size:5.4vw; padding-bottom: 10px;}
+#resume_goto .goto_ttl p{
+    padding-top: 3px;
+}
+
+#resume_goto .gotobtn{
+    position: absolute;top: -100px; left: 35vw;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 7px;
+    text-align: center; line-height: 60px;
+    width:185px; height: 60px;
+}
+/* 미술관 소개 */
+#introduction{
+    margin-top: 100px; box-sizing: border-box;
+    width: 100%;height:500px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden;
+    position: relative; */
+}
+#introduction .ttl_box{
+    width: 300px;height: 100px;
+  
+}
+
+#introduction .veiw>h2{
+    float: left;
+    margin: 100px 0 0 26px;
+    font-size: 35px;
+}
+.slide_area{
+    position: absolute;
+    top: 100px;right: -300px;
+    width: 1500px;height: 500px; 
+    border:2px solid #777;
+}
+#introduction .veiw{
+   /* margin: 0 auto; */
+    width:100%; height: 500px; 
+}
+.museum_list{ 
+    position: absolute;
+    top: 10px; left: 300px;
+    display: flex; justify-content: space-between;
+    width: 1100px; height: 500px;}
+.museum_list>li{
+    width:240px; height: 500px;
+   
+} 
+.intro_imgbox{
+    width: 100%; height: 200px;
+    border-radius: 7px;
+    background-color: rgb(224, 187, 181);
+}
+.listbox h5{
+    float: left;padding: 8px 0 0 5px;
+    font-size: 20px;
+}
+.listbox span{
+    padding: 9px 0 0 5px;
+    display: block; font-weight: 700;
+    float: left;font-size: 20px;
+    color: #999;
+}
+.listbox p{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0 0 5px;
+    float: left; line-height: 20px;
+}
+.museum_contents li{
+    margin: 15px  0 0 5px;
+    padding: 3px 3px;
+    background-color: #666;
+    border-radius: 7px;
+    color: #fff;
+    float: left;font-size: 12px;
+}
+.listbox a{
+    width: 100%;
+    display: block;margin: 10px 0 0 5px;
+    float: left; font-size: 10px;
+}
+/* 전시 */
+
+#exhibition{
+    margin-top: 100px;
+    padding-top: 20px;
+   
+    box-sizing: border-box;
+    width: 100%; height: 865px;
+    position: relative;
+   }
+#exhibition .ttl_box{
+    padding-bottom: 20px;
+}
+
+#exhibition .exhi_left_btn{
+    position: absolute;
+    top: 500px; left:4vw;
+}
+#exhibition .exhi_left_btn img{
+    width: 3.7vw; height: 3.7vh;
+}
+#exhibition .exhi_right_btn{
+    position: absolute;
+    top: 500px; right: 4vw;
+}
+#exhibition .exhi_right_btn img{
+    width: 3.7vw; height: 3.7vh;
+}
+
+#exhibition .ttl_box{
+    margin: 0 ;
+    width: 100%;
+    height: 50px;
+}
+.exhibition_top{
+    margin-top: 10px;
+    width: 100%;height:800px;
+    background-color: #141313;
+}
+.museum_btn{
+    width: 100%; height: 98px;
+    border-bottom:3px solid #777;
+    box-sizing: border-box;opacity: 0.7;
+}
+.museum_btn_in{
+    margin: 0;
+    width: 100%;height: 98px;
+}
+.museum_btn_in>ul{
+    margin: 0 auto;
+    width: 100%;height: 98px;
+   line-height: 96px;
+    display: flex; justify-content: space-around;
+    background-color: #7c7a7a;
+}
+
+.museum_btn_in>ul>li>a{
+    font-size:1vw;
+    color: #fff;
+}
+.museum_btn_in>ul>li {
+    display: block;
+    width: 12vw;
+}
+
+.museum_btn_in>ul>li:hover {
+    background-color: #141313;
+}
+.exhibition_bottom{
+    margin-top:30px; 
+    display: flex;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 80%; height: 650px;
+   
+}
+.exhibition_bottom .post_area{
+    margin: 0 auto;
+    width: 300px;height:550px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.exhibition_bottom .exhibition_txt_area{
+    margin-top: 10px;
+    margin-left: 0;
+    width: 37vw;height: 350px;
+    color: #fff;
+}
+.exhibition_txt_area .exhhi_place{
+    font-size: 15px;
+}
+
+.exhibition_txt_area .exhi_ttl{
+    padding-top: 10px;
+    font-size: 4.6vw;
+}
+
+.exhibition_txt_area .date{
+   
+    padding: 10px 0 10px 0; font-size: 20px; font-weight: 700;
+}
+.exhibition_txt_area .stereo_guide{
+   padding: 0 0 0 0;
+}
+.exhibition_txt_area .exhi_exlpa p{
+    display: none;
+    font-size: 15px; padding-top: 10px;
+
+}
+.exhibition_txt_area .reserve_btn{
+    margin-top:10px ; cursor: pointer;
+    line-height: 40px; font-size: 15px;
+    width: 120px;height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+
+
+/* 관련시설 */
+#fasility{
+    margin:0;
+    margin-top: 150px;
+    width:100%; height: 1048px;
+   
+}
+#fasility  .ttl_box{
+    padding: 0 0 30px 20px;
+}
+
+.fasility_box{
+    margin-top: 10px;
+    width: 100%;height: 750px;
+    
+}
+
+.top_box{
+    margin-bottom: 0;
+    width: 100%; height: 524px;
+   
+}
+.artbank{
+    float: left;
+   
+    width: 100%; height: 262px;
+    background-color:#ccc;}
+.residence{
+    float: right;
+   
+    width: 100%; height: 262px;
+    background-color: #3a3333;
+}    
+.bottom_box{
+    width: 100%; height: 524px;
+   
+}
+.child_art{
+    float: left;
+   
+    background-size: 100% ;
+    width: 100%; height: 262px;
+    background-color: #666;
+}
+.library{
+    float: right;
+    background: url(../imags/library04.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%; height: 262px;
+    background-color: slategray;
+}
+/* 디지털 미술관 */
+#mmcatv{
+    margin: 0 ;
+    margin-top: 200px;
+    width: 100%;height: 548px;
+}
+#mmcatv .ttl_box{
+    padding: 0 0 10px 20px;
+}
+
+.mmtv_main_box{
+    margin-top: 10px;
+    /* display: flex;
+    align-items: center; */
+    width: 100%; height:450px;
+    background-color: #3a3333;
+}
+.movie_group{
+    
+    width: 300px;height: 295px;
+    display: flex;
+    justify-content:center;
+}
+.moviebox{
+    width: 100%;height: 295px;
+    background-color: #777;
+}
+.moviebox:nth-child(1){
+    display: none;
+}
+.moviebox:nth-child(2){
+    display: none;
+}
+
+
+/* 뉴스레터 */
+#newsletter{
+    margin-top: 150px;
+    width: 100%; height:680px ;
+    position: relative;
+}
+
+#newsletter .ttl_box{
+    margin: 0 ;
+    padding: 0 0 15px 0px;
+    width: 100%; height: 50px;
+}
+#notice .ttl{
+    font-size:2.6vw;
+    margin:0;
+    width:100%;
+    height: 50px;
+}
+#notice .ttl_eng{
+    font-size:2.6vw ;
+}
+
+.subscrip_btn{
+   display: none}
+.subscrip_btn a{
+   margin-left: 0;
+   text-align: center;
+    color: #fff;
+}
+
+.newspage{
+    margin-top: 20px;
+    width: 100%; height:600px;
+    background-color: #4b4343;
+    position: relative;
+}
+
+.news_in{
+    margin: 0;
+    width: 100%; height: 466px;
+    background-color: #3a3333;
+    opacity: 0.9; position: relative;
+}
+.news_in .right_btn {
+    position: absolute;
+    top:300px ; right: 0;
+}
+
+.news_in .right_btn img{
+    width: 30px; height: 30px;
+}
+
+.news_in .left_btn img{
+    width: 30px; height: 30px;
+}
+.news_in .left_btn {
+    position: absolute;
+    top:300px ; left: 0;
+}
+.news_in_box{
+    float: right;
+    width: 850px;height: 466px;
+    
+}
+.news_in_box .image_box{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 450px; height: 450px;
+
+}
+.news_in_box .newsletter_box{
+    
+   position: absolute;
+   top: 190px ; left: 30px;
+    padding: 50px 20px 0 0;
+    box-sizing: border-box;
+    text-align: right;
+    width: 400px;height: 173px;
+}
+
+.news_in_box .newsletter_box h5{
+    font-size:25px; color: #fff;
+}
+.news_in_box .newsletter_box p{
+    padding-top: 10px;
+    font-size: 2.8vw;
+    color: #fff;
+}
+
+
+/* 새소식 */
+#notice{
+    margin-top: 90px;
+    width: 100%; height: 450px;
+}
+#notice_in{
+    margin: 0 ;
+    /* display: flex; */
+    width: 100%;height: 550px;
+    
+}
+#notice_in .right_box{
+    width: 100%;height: 550px;
+   
+
+}
+#notice_in .ttl_box{
+    padding: 0 0 20px 45px;
+    box-sizing: border-box;
+    line-height: 150px;
+    width: 100%;height: 100px;
+    
+    
+}
+#notice_in .ttl_box .ttl{
+   width: 100px; font-size: 30px;
+}
+
+#notice_in .ttl_box .ttl_eng{
+    float: left; opacity: 0.4;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#notice_in .news_box{
+    margin-left: 10vw;
+    width: 80vw;height: 250px;
+    border-top: 3px solid #111 ;
+    border-bottom: 3px solid #111 ;
+}
+#notice_in .left_box{
+    width: 50vw;height: 550px;
+   display: none;
+}
+
+#notice_in .notice_box{
+    margin-left:2vw;
+    width: 44vw;height: 250px;
+    border-top: 3px solid #111 ;
+    border-bottom: 3px solid #111 ;
+}
+
+/* 하단 */
+#footer{
+    width: 100%;height: 400px;
+    
+}
+#footer_top{
+    width: 100%;height: 250px;
+    background-color: #3a3333;
+}
+#footer_top .top_in{
+    margin: 0 ;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+    width: 100%;height:200px;
+    background-color: #3a3333;
+}
+#footer_top .top_in .company_info {
+    float: left;
+}
+#footer_top .top_in .company_info p{
+    padding-top: 3px;
+    font-size: 1.3vw; color: #adadad;
+}
+#footer_top .top_in .sub_mn{
+    display: none;
+    width: 55.5vw;height: 200px;
+}
+#footer_top .top_in .sub_mn_li{
+    margin-left: 9vw;
+}
+
+#footer_top .top_in .sub_mn_li >li{
+    float: left; margin-left: 6vw;
+}
+#footer_top .top_in .foot_li>li>a{
+    color: #adadad; font-size: 1.2vw;
+}
+
+#footer_bottom{
+    
+    width: 100%;height: 127px;
+   
+}
+#footer_bottom .bottom_in{
+    margin: 0;
+    padding-top: 15px;
+    box-sizing: border-box;
+    width: 100%;height: 127px;
+    
+}
+

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립현대미술관</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="./css/main_1200.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="./css/main_1000.css">
+    <link rel="stylesheet" media="screen and (max-width:640px)" href="./css/main_640.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단 -->
+        <header id="header">
+            <section id="header_in">
+                <h1 class="logo"><a href="https://dohh0117.github.io/artmuse/"><img src="./imags/logo.png" alt=""></a></h1>
+                <ul class="infomn">
+                    <li><a href="">로그인 | 회원가입</a></li>
+                    <li><a href="">검색</a></li>
+                    <li><a href="">KR</a></li>
+                </ul>
+                <div class="nav_back"></div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="https://dohh0117.github.io/subpage_artmuse/">소개</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">전시</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">관람·참여</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">디지털미술관</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">미술연구</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">소장품</a>
+                            <ul class="sub">
+                                <li><a href="">menu1</a></li>
+                                <li><a href="">menu2</a></li>
+                                <li><a href="">menu3</a></li>
+                                <li><a href="">menu4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
+        </header>
+        <!-- 메인슬라이드 -->
+        <section id="main">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="imags/slider01_2.png"></div>
+                  <div class="swiper-slide"><img src="imags/slider02.png"></div>
+                  <div class="swiper-slide"><img src="imags/slider03.png"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+          
+              <!-- Swiper JS -->
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  spaceBetween: 30,
+                  centeredSlides: true,
+                  autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },breakpoinst:{
+                    1200:{
+                        sliderPerView:3,
+                    }, 1000: {
+                          sliderPerView: 3,
+                      }, 640: {
+                          sliderPerView: 3,
+                      },
+
+                  }
+                });
+          
+              </script>
+           
+        </section>
+        <!-- 컨텐츠 -->
+        <section id="contents">
+            <!-- 미술관 관람예약 -->
+            <article id="resume_goto">
+                <div class="goto_ttl">
+                    <h3>국립현대 미술관 관람예약 바로가기</h3>
+                    <p>화요일-월요일 10:00-18:00(월요일 서울 개관)</p>
+                    <p>서울·덕수궁 : 수요일,토요일 야간개장 10:00-21:00</p>
+                </div>
+                   <div class="gotobtn">
+                    전시관람 예약하기
+                   </div>
+            </article>
+            <!-- 미술관소개 -->
+            <article id="introduction">
+                <div class="ttl_box_1000">
+                    <h2 class="ttl">미술관 소개</h2>
+                    <h2 class="ttl_eng">museum</h2>
+                </div>
+                <div class="veiw">
+                    <div class="ttl_box">
+                        <h2 class="ttl">미술관 소개</h2>
+                        <h2 class="ttl_eng">museum</h2>
+                    </div>    
+                    <div class="slide_area">
+                        <ul class="museum_list">
+                            <li class="seul listbox">
+                                <div class="intro_imgbox">
+                                    <img src="./imags/seoul2.jpg"alt="서울">
+                                </div>
+                                <h5>서울</h5><span>Seul</span>
+                                    <p>월요일,화요일,목요일,금요일,일요일 10:00-18:00<br/>
+                                    수요일,토요일,야간개장 10:00-21:00
+                                </p>
+                                <ul class="museum_contents">
+                                    <li>전시</li>
+                                    <li>필름비디오</li>
+                                    <li>다원예술</li>
+                                    <li>교육</li>
+                                    <li>이벤트</li>
+                                </ul>
+                                <a href="">오시는 길 →</a>
+                            </li>
+                            <li class="gwacheon listbox">
+                                <div class="intro_imgbox">
+                                    <img src="./imags/gwacheon.jpg"alt="서울">
+                                </div>
+                                <h5>과천</h5><span>Gwacheon</span>
+                                <p>월요일,화요일,목요일,금요일,일요일 10:00-18:00<br>
+                                수요일,토요일,야간개장 10:00-21:00</p>
+                                <ul class="museum_contents">
+                                    <li>전시</li>
+                                    <li>필름비디오</li>
+                                    <li>다원예술</li>
+                                    <li>교육</li>
+                                    <li>이벤트</li>
+                                </ul>
+                                <a href="">오시는 길 →</a>
+                            </li>
+                            <li class="deoksugung listbox">
+                                <div class="intro_imgbox">
+                                    <img src="./imags/deoksugung.jpg"alt="서울">
+                                </div>
+                                <h5>덕수궁</h5><span>Deoksugung Palace</span>
+                                <p>월요일,화요일,목요일,금요일,일요일 10:00-18:00<br>
+                                수요일,토요일,야간개장 10:00-21:00</p>
+                                <ul class="museum_contents">
+                                    <li>전시</li>
+                                    <li>필름비디오</li>
+                                    <li>다원예술</li>
+                                    <li>교육</li>
+                                    <li>이벤트</li>
+                                </ul>
+                                <a href="">오시는 길 →</a>
+                            </li>
+                            <li class="cheongju listbox">
+                                <div class="intro_imgbox">
+                                    <img src="./imags/cheongju.jpg"alt="서울">
+                                </div>
+                                <h5>청주</h5><span>Cheongju</span>
+                                <p>월요일,화요일,목요일,금요일,일요일 10:00-18:00<br>
+                                수요일,토요일,야간개장 10:00-21:00</p>
+                                <ul class="museum_contents">
+                                    <li>전시</li>
+                                    <li>필름비디오</li>
+                                    <li>다원예술</li>
+                                    <li>교육</li>
+                                    <li>이벤트</li>
+                                </ul>
+                                <a href="">오시는 길 →</a>
+                            </li>
+                        </ul>        
+                    </div>      
+                </div>
+            </article>
+            <!-- 전시-->
+            <article id="exhibition"> 
+                <div class="ttl_box">
+                    <h3 class="ttl">전시</h3>
+                    <h3 class="ttl_eng">Exhibition</h3>
+                </div>
+                <a href="" class="exhi_left_btn">
+                    <img src="./imags/left_btn.png">
+                </a>
+                <a href="" class="exhi_right_btn">
+                    <img src="./imags/right_btn.png">
+                </a>
+                <div class="exhibition_top">
+                    <div class="museum_btn">
+                        <div class="museum_btn_in">
+                            <ul>
+                                <li><a href="">전체</a></li>
+                                <li><a href="">서울</a></li>
+                                <li><a href="">과천</a></li>
+                                <li><a href="">덕수궁</a></li>
+                                <li><a href="">청주</a></li>
+                                <li><a href="">어린이미술관</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <section class="exhibition_bottom">
+                        <div class="post_area">
+                            <img src="./imags/post01.jpg" width="100%" height="100%" alt="포스터01">
+                        </div>
+                        <div class="exhibition_txt_area ">
+                            <h5 class="exhi_place">서울</h5>
+                            <h3 class="exhi_ttl">페더 바이벨:<br>
+                            인지행위로서의 예술</h3>
+                            <p class="date">2023.02.03~2023.05.14</p>
+                            <p class=" stereo_guide">오디오가이드</p>
+                            <div class="exhi_exlpa">
+                                <p>
+                                    페터 바이벨:인지 행위로서의 예술은 미디어 개념미술 작가로 잘 알려진<br>
+                                    페터 바이벨(1944~)의 작품<br>
+                                    세계를 조망하는 대규모 회고 전시이다.<br>
+                                    페터 바이벨은 1960년대부터 예술가이자 큐레이터, 이론가로 활동하며<br>
+                                    미디어 아트 발전에 중대한 영향을 미쳤다.<br>
+                                    이번 전시는 작가의 예술 세계를 대표하는 <br>
+                                    작품 70여 점을 예술활동, 퍼포먼스, 사진, 언어 분석,글쓰기, 시, 비디오,<br>
+                                    확장영화, 컴퓨터 기반 설치 작업 등의 주제 아래에서 살펴본다.<br>
+                                </p>
+                            </div>
+                            <div class="reserve_btn">
+                                전시 예약하러가기
+                            </div>
+                        </div>
+                    </section>
+                </div>    
+                    
+            </article>
+            <!-- 관련시설 -->
+            <article id="fasility">
+                <div class="ttl_box">
+                    <h3 class="ttl">관련시설</h3>
+                    <h3 class="ttl_eng">Facility</h3>
+                </div>    
+                <section class="fasility_box">
+                    <div class="top_box">
+                        <div class="artbank fasility_img">
+                           <img src="./imags/artbank_01.png" alt="미술은행">
+                           <a class="fasility_ttl artbank_txt" herf="">미술은행</a>
+                        </div>
+                        <div class="residence fasility_img">
+                           <img src="./imags/residence01.png" alt="레지던시">
+                           <a class="fasility_ttl residence_txt" herf="">래지던시</a>
+                        </div>
+                    </div>
+                    <div class="bottom_box">
+                        <div class="child_art fasility_img">
+                            <img src="./imags/child_art02.png" alt="어린이미술관"> 
+                            <a class="fasility_ttl childart_txt" herf="">어린이미술관</a>
+                        </div>
+                        <div class="library fasility_img">
+                            <img src="./imags/librery_01.png" alt="도서및 아카이브">
+                            <a class="fasility_ttl librery_txt" herf="">도서및 아카이브</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- 디지털 미술관 -->
+            <article id="mmcatv">
+                <div class="ttl_box">
+                    <h3 class="ttl">디지털미술관</h3>
+                    <h3 class="ttl_eng">MMCA TV</h3>
+                </div>
+                <section class="mmtv_main_box">
+                    <div class="movie_group">
+                        <div class="moviebox movie1">
+                            <div class="frontbox"></div>
+                            <img src="./imags/movie01.jpg" alt="">
+                        </div>
+                        <div class="moviebox movie2">
+                            <img src="./imags/movie02.jpg" alt="">
+                        </div>
+                        <div class="moviebox movie3">
+                            <img src="./imags/movie03.jpg" alt="">
+                        </div>
+                    </div>     
+                </section>
+            </article>
+            <!-- 뉴스레터 -->
+            <article id="newsletter">
+                <div class="ttl_box">
+                    <h3 class="ttl">MMCA뉴스레터</h3>
+                    <h3 class="ttl_eng">MMCA News Letter</h3>
+                </div>
+                <div class="subscrip_btn">
+                    <a href="">MMCA 뉴스레터 구독신청</a>
+                </div>
+                <section class="newspage">
+                    <div class="news_in">
+                        <a href="" class="right_btn"><img src="./imags/right_btn.png" alt=""></a>
+                        <div class="news_in_box">
+                            <div class="image_box">
+                                <img src="./imags/newsletter_01.png" alt="">
+                            </div>
+                            <div class="newsletter_box">
+                                <h5>포커스</h5>
+                                <p>낯설지만 익숙한 목소리<페터 바이벨:인지행위로서의 예술></p>
+                            </div>
+                        </div>
+                        <a href="" class="left_btn"><img src="./imags/left_btn.png" alt=""></a>
+                    </div>
+                </section>
+            </article>
+            <!-- 새소식 -->
+            <article id="notice">
+               <section id="notice_in">
+                <div class="right_box">
+                    <div class="ttl_box">
+                        <h3 class="ttl">새소식</h3>
+                        <h3 class="ttl_eng">news</h3>
+                    </div>
+                    <div class="news_box">
+                        <ul>
+                            <li>
+                                news 국립현대미술관 제10기 고객자문단 최종선발자 발표
+                            </li>
+                            <li>
+                                news 제3기 국립현대미술관 외국인서포터즈 선발자 발표 및 발족식 안내
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="left_box">
+                    <div class="ttl_box">
+                        <h3 class="ttl">공고</h3>
+                        <h3 class="ttl_eng">notice</h3>
+                    </div>
+                    <div class="notice_box">
+                        <ul>
+                            <li>
+                                notice 국립현대미술관 미술도서실(과천) 재운영(2023.2.13)
+                           </li>
+                            <li>
+                                notice 국립현대미술관 덕수궁 외벽공사에 따른 휴관 안내
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+               </section>
+            </article>
+        </section>
+        <!-- 하단 -->
+        <footer id="footer">
+            <section id="footer_top">
+                <div class="top_in">
+                    <div class="company_info">
+                        <p>표지:윤범모,사업자 등록번호:138-83-00313</p>
+                        <p>대표전화:(서울)02-3701-9500,</p>
+                        <p>(과천)02-2188-6000,</p>
+                        <p>(덕수궁)02-2022-0600,</p>
+                        <p>(청주)043-261-1400</p>
+                        <p>ⓒ2021 National Museum of Modern and Contemporary Art,Korea</p>
+                    </div>
+                    <div class="sub_mn">
+                        <ul class="sub_mn_li">
+                            <li>
+                                <ul class="foot_li">
+                                  <li><a href="">인스타그램</a></li>
+                                  <li><a href="">유튜브</a></li>
+                                  <li><a href="">페이스북</a></li>
+                                  <li><a href="">트위터</a></li>
+                                  <li><a href="">네이버</a></li>
+                                  <li><a href="">네이버포스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="foot_li">
+                                   <li><a href="">개인정보 처리방침</a></li>
+                                   <li><a href="">이용약관</a></li>
+                                   <li><a href="">저작권정책</a></li>
+                                   <li><a href="">국민신문고</a></li>
+                                   <li><a href="">정보공개</a></li>
+                                   <li><a href="">클린신고센터</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="foot_li">
+                                    <li><a href="">미술관 소개</a></li>
+                                    <li><a href="">새소식</a></li>
+                                    <li><a href="">채용</a></li>
+                                    <li><a href="">보도자료</a></li>
+                                    <li><a href="">후원</a></li>
+                                    <li><a href="">자원봉사</a></li>
+                                    <li><a href="">시설대관·복제신청</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">사이트맵</a></li>
+                                    <li><a href="">국립현대미술관</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="footer_bottom">
+                <div class="bottom_in">
+                    <h2><img src="./imags/logo.png" alt="국립현대미술관로고"></h2>
+                </div>
+            </section>
+        </footer>
+    </div>     
+</body>
+</html>
